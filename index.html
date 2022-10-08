@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!--
+    Fazer um aplicativo web chamada "Contador de Palavras". O objetivo do aplicativo é contar
+a frequência das palavras em um bloco de texto e criar uma exibição tabular de cada
+palavra única no texto junto com sua frequência, em ordem decrescente de frequência.
+
+Grupo: 
+    Felipe Quaresma
+    Helton Vinícius
+    Lucas Lourenço
+    Josemo Junior
+
+-->
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavra</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contador.css">
+    <script src="contador.js"></script>    
+
+</head>
+<body>
+    <header>
+        <div class="container_imagem">
+            <img src="img/banner_contador_cyberpunk_320.png" class="imagem_320">
+            <img src="img/banner_contador_cyberpunk_720.png" class="imagem_720">
+            <img src="img/banner_contador_cyberpunk_1240.png" class="imagem_1024">
+            <img src="img/banner_contador_cyberpunk_1440.png" class="imagem_1440">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container_form">
+                <div class="form_header">
+                    <p class="instrucoes">1) Digite abaixo o texto do qual deseja contar a frequência de cada palavra, após clique em enviar.</p>
+                </div> 
+                <div class="container_text_area">
+                    <textarea rows="5" cols="60" id="texto" class="text_area"></textarea>
+                    <input type="submit" value="Enviar" onclick="inicio();" class="button">
+                    <p id="paragrafo"></p> 
+                </div>
+                <div class="output-box">
+                    <details class="details">
+                        <summary class="summary">
+                            2) Clique aqui para ver:
+                        </summary>
+                            <div style="overflow: auto; height: 320px">
+                                <table id="tabela">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Palavra</th>
+                                        <th>Frequencia</th>
+                                    </tr>
+                                </table>
+                            </div>    
+                    </details>   
+                </div>
+            </div>
+        </div>
+    </main>  
+    <footer>
+        <div class="footer">
+            <img src="img/footer_up_320.png" class="footer_up_320">
+            <img src="img/footer_up_720.png" class="footer_up_720">
+            <img src="img/footer_up_1224.png" class="footer_up_1224">
+            <img src="img/footer_up_1440.png" class="footer_up_1440">
+            <ul class="footer_list">
+                <li class="grupo">Grupo: </li>
+                <li>Felipe Quaresma</li>
+                <li>Helton Vinícius</li>
+                <li>Josemo Júnior</li>
+                <li>Lucas Lourenço</li>
+            </ul>    
+            <p class="footer_frase">João Pessoa - PB (Out.2022)</p>
+            <img src="img/footer_down_320.png" class="footer_down_320">
+            <img src="img/footer_down_720.png" class="footer_down_720">
+            <img src="img/footer_down_1224.png" class="footer_down_1224">
+            <img src="img/footer_down_1440.png" class="footer_down_1440">
+            
+        </div>  
+    </footer>  
+</body>
+</html>
